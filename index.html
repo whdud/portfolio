@@ -23,10 +23,10 @@
 
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; border-bottom: 1px solid transparent; transition: border-color 0.3s, background 0.3s; }
     nav.scrolled { border-color: var(--border); background: rgba(10,10,10,0.92); backdrop-filter: blur(12px); }
-    .nav-logo { font-family: var(--font-display); font-size: 22px; letter-spacing: 3px; color: var(--cream); text-decoration: none; cursor: none; }
+    .nav-logo { font-family: var(--font-display); font-size: 26px; letter-spacing: 3px; color: var(--cream); text-decoration: none; cursor: none; }
     .nav-logo span { color: var(--red); }
     .nav-links { display: flex; gap: 36px; list-style: none; }
-    .nav-links a { font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.2s; cursor: none; }
+    .nav-links a { font-family: var(--font-mono); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.2s; cursor: none; }
     .nav-links a:hover { color: var(--cream); }
 
     #main-view, #detail-view { transition: opacity 0.3s ease; }
@@ -35,22 +35,22 @@
     #hero { position: relative; min-height: 100vh; display: flex; align-items: center; padding: 0 48px; overflow: hidden; }
     .hero-bg-text { position: absolute; right: -20px; top: 50%; transform: translateY(-50%); font-family: var(--font-display); font-size: clamp(160px,22vw,320px); color: rgba(255,255,255,0.02); line-height: 1; user-select: none; letter-spacing: -4px; }
     .hero-content { position: relative; z-index: 1; max-width: 700px; }
-    .hero-tag { font-family: var(--font-mono); font-size: 11px; letter-spacing: 4px; color: var(--red); text-transform: uppercase; margin-bottom: 20px; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards; }
+    .hero-tag { font-family: var(--font-mono); font-size: 13px; letter-spacing: 4px; color: var(--red); text-transform: uppercase; margin-bottom: 20px; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards; }
     .hero-title { font-family: var(--font-display); font-size: clamp(64px,9vw,120px); line-height: 0.92; letter-spacing: 2px; margin-bottom: 32px; opacity: 0; animation: fadeUp 0.8s ease 0.4s forwards; }
     .hero-title .red { color: var(--red); }
-    .hero-desc { font-size: 15px; color: #ffffff; max-width: 480px; line-height: 1.8; margin-bottom: 48px; opacity: 0; animation: fadeUp 0.8s ease 0.6s forwards; }
+    .hero-desc { font-size: 17px; color: #ffffff; max-width: 480px; line-height: 1.8; margin-bottom: 48px; opacity: 0; animation: fadeUp 0.8s ease 0.6s forwards; }
     .hero-cta { display: flex; gap: 20px; align-items: center; opacity: 0; animation: fadeUp 0.8s ease 0.8s forwards; }
-    .btn-primary { display: inline-block; padding: 14px 32px; background: var(--red); color: var(--cream); font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: background 0.2s, transform 0.2s; cursor: none; }
+    .btn-primary { display: inline-block; padding: 14px 32px; background: var(--red); color: var(--cream); font-family: var(--font-mono); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: background 0.2s, transform 0.2s; cursor: none; }
     .btn-primary:hover { background: #a93226; transform: translateY(-2px); }
-    .btn-ghost { display: inline-block; padding: 14px 32px; border: 1px solid var(--border); color: var(--muted); font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: border-color 0.2s, color 0.2s; cursor: none; }
+    .btn-ghost { display: inline-block; padding: 14px 32px; border: 1px solid var(--border); color: var(--muted); font-family: var(--font-mono); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: border-color 0.2s, color 0.2s; cursor: none; }
     .btn-ghost:hover { border-color: var(--cream); color: var(--cream); }
-    .scroll-hint { position: absolute; bottom: 40px; left: 48px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; color: var(--muted); display: flex; align-items: center; gap: 12px; opacity: 0; animation: fadeUp 0.8s ease 1.2s forwards; }
+    .scroll-hint { position: absolute; bottom: 40px; left: 48px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px; color: var(--muted); display: flex; align-items: center; gap: 12px; opacity: 0; animation: fadeUp 0.8s ease 1.2s forwards; }
     .scroll-line { width: 40px; height: 1px; background: var(--red); animation: expandLine 1.5s ease 1.4s infinite; }
     @keyframes expandLine { 0%,100% { width:40px; opacity:1; } 50% { width:60px; opacity:0.5; } }
 
     section { position: relative; z-index: 1; }
     .section-inner { max-width: 1100px; margin: 0 auto; padding: 120px 48px; }
-    .section-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 4px; color: var(--red); text-transform: uppercase; margin-bottom: 16px; }
+    .section-label { font-family: var(--font-mono); font-size: 12px; letter-spacing: 4px; color: var(--red); text-transform: uppercase; margin-bottom: 16px; }
     .section-title { font-family: var(--font-display); font-size: clamp(42px,6vw,72px); letter-spacing: 2px; margin-bottom: 64px; line-height: 1; }
 
     #projects { background: var(--surface); }
@@ -61,11 +61,11 @@
     .card-thumb-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 48px; letter-spacing: 4px; color: rgba(255,255,255,0.04); user-select: none; }
     .card-thumb::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 40%, rgba(10,10,10,0.95)); }
     .card-body { padding: 24px; }
-    .card-meta { font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; color: var(--red); text-transform: uppercase; margin-bottom: 8px; }
-    .card-title { font-family: var(--font-display); font-size: 28px; letter-spacing: 1px; color: var(--cream); margin-bottom: 8px; }
-    .card-desc { font-size: 13px; color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
+    .card-meta { font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px; color: var(--red); text-transform: uppercase; margin-bottom: 8px; }
+    .card-title { font-family: var(--font-display); font-size: 32px; letter-spacing: 1px; color: var(--cream); margin-bottom: 8px; }
+    .card-desc { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
     .card-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-    .tag { font-family: var(--font-mono); font-size: 9px; letter-spacing: 1px; padding: 4px 10px; border: 1px solid var(--border); color: var(--muted); }
+    .tag { font-family: var(--font-mono); font-size: 11px; letter-spacing: 1px; padding: 5px 12px; border: 1px solid var(--border); color: var(--muted); }
     .card-arrow { position: absolute; top: 20px; right: 20px; width: 36px; height: 36px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 16px; opacity: 0; transform: translate(4px,-4px); transition: opacity 0.2s, transform 0.2s, border-color 0.2s, color 0.2s; }
     .project-card:hover .card-arrow { opacity: 1; transform: translate(0,0); border-color: var(--red); color: var(--red); }
 
@@ -75,24 +75,24 @@
     .detail-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: clamp(120px,20vw,240px); color: rgba(255,255,255,0.03); letter-spacing: -4px; user-select: none; }
     .detail-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 30%, rgba(10,10,10,0.98)); }
     .detail-hero-content { position: relative; z-index: 1; padding: 48px; width: 100%; }
-    .detail-back { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); text-decoration: none; border: none; background: none; cursor: none; margin-bottom: 24px; transition: color 0.2s; }
+    .detail-back { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); text-decoration: none; border: none; background: none; cursor: none; margin-bottom: 24px; transition: color 0.2s; }
     .detail-back:hover { color: var(--red); }
-    .detail-back::before { content: '←'; font-size: 14px; }
-    .detail-meta { font-family: var(--font-mono); font-size: 10px; letter-spacing: 3px; color: var(--red); text-transform: uppercase; margin-bottom: 12px; }
+    .detail-back::before { content: '←'; font-size: 16px; }
+    .detail-meta { font-family: var(--font-mono); font-size: 12px; letter-spacing: 3px; color: var(--red); text-transform: uppercase; margin-bottom: 12px; }
     .detail-title { font-family: var(--font-display); font-size: clamp(48px,8vw,100px); letter-spacing: 2px; line-height: 0.95; }
     .detail-body { max-width: 1100px; margin: 0 auto; padding: 64px 48px; }
     .detail-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 64px; align-items: start; margin-bottom: 64px; }
-    .detail-desc { font-size: 16px; color: var(--cream); line-height: 1.9; }
+    .detail-desc { font-size: 18px; color: var(--cream); line-height: 1.9; }
     .detail-desc p { margin-bottom: 20px; }
     .detail-desc strong { color: var(--cream); font-weight: 700; }
     .detail-info { display: flex; flex-direction: column; }
     .info-row { padding: 14px 0; border-bottom: 1px solid var(--border); }
     .info-row:first-child { border-top: 1px solid var(--border); }
-    .info-label { font-family: var(--font-mono); font-size: 9px; letter-spacing: 2px; color: var(--red); text-transform: uppercase; margin-bottom: 4px; }
-    .info-value { font-size: 13px; color: var(--cream); }
+    .info-label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; color: var(--red); text-transform: uppercase; margin-bottom: 4px; }
+    .info-value { font-size: 15px; color: var(--cream); }
     .detail-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
     .detail-links { display: flex; gap: 16px; margin-top: 40px; flex-wrap: wrap; }
-    .link-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: all 0.2s; cursor: none; }
+    .link-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: all 0.2s; cursor: none; }
     .link-btn.primary { background: var(--red); color: var(--cream); }
     .link-btn.primary:hover { background: #a93226; }
     .link-btn.ghost { border: 1px solid var(--border); color: var(--muted); }
@@ -100,25 +100,25 @@
 
     #about { background: var(--bg); }
     .about-grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: start; }
-    .about-text p { font-size: 15px; color: #ffffff; line-height: 1.9; margin-bottom: 20px; }
+    .about-text p { font-size: 17px; color: #ffffff; line-height: 1.9; margin-bottom: 20px; }
     .about-text p strong { color: var(--cream); font-weight: 700; }
     .skills-list { list-style: none; }
-    .skill-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+    .skill-item { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); font-size: 15px; }
     .skill-item:first-child { border-top: 1px solid var(--border); }
     .skill-dot { width: 6px; height: 6px; background: var(--red); border-radius: 50%; flex-shrink: 0; }
     .skill-name { color: var(--cream); flex: 1; }
-    .skill-level { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; color: var(--muted); }
+    .skill-level { font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; color: var(--muted); }
 
     #contact { background: var(--surface); }
     .contact-inner { max-width: 600px; margin: 0 auto; text-align: center; padding: 120px 48px; }
-    .contact-email { font-family: var(--font-display); font-size: clamp(24px,4vw,42px); color: var(--cream); text-decoration: none; letter-spacing: 2px; display: block; margin: 32px 0 48px; transition: color 0.2s; cursor: none; }
+    .contact-email { font-family: var(--font-mono); font-size: clamp(20px,3vw,32px); color: var(--cream); text-decoration: none; letter-spacing: 2px; display: block; margin: 32px 0 48px; transition: color 0.2s; cursor: none; }
     .contact-email:hover { color: var(--red); }
     .social-links { display: flex; justify-content: center; gap: 24px; }
-    .social-link { font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; cursor: none; }
+    .social-link { font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; cursor: none; }
     .social-link:hover { color: var(--red); border-color: var(--red); }
 
     footer { padding: 24px 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 1; }
-    footer p { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; color: var(--muted); }
+    footer p { font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; color: var(--muted); }
     footer span { color: var(--red); }
 
     @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
@@ -276,13 +276,14 @@
         ],
 
         timeline: [
-          { time: '00:31 - 01:00', desc: '한쪽 길을 오브젝트로 막고 조명을 어둡게 하여 플레이어가 올바른 길로 가도록 자연스럽게 유도합니다. 다른 병실 문 또한 상호작용이 가능하지만 잠긴 사운드를 내어 자연스럽게 올바른 플레이 구간으로 이동하도록 합니다.' },
-          { time: '01:05 - 01:40', desc: '가는 길에 피로 그려진 표식을 배치하여 해당 문을 상호작용하도록 유도합니다. 그 병실에는 하이라이트 조명으로 강조된 곰인형을 배치하여 상호작용을 유도합니다. 플레이어가 방 안으로 들어왔다면 문이 세게 닫히는 소리와 함께 문을 닫아 긴장감을 높입니다.' },
-          { time: '02:00 - 02:40', desc: '안내데스크에 쪽지를 두어 다음 가야 할 장소와 탈출의 힌트를 자연스럽게 노출하여 플레이어가 해야 할 과제를 제시합니다. 손전등도 함께 배치하여 필요한 아이템의 개연성을 부여합니다. 벽에는 비밀번호에 대한 힌트가 하나 존재하여 4개의 비밀번호가 필요하다는 것을 암시합니다.' },
-          { time: '02:55 - 03:15', desc: '역 ㄱ자 복도를 배치하여 플레이어가 복도의 끝을 보지 못하게 차단합니다. 코너를 도는 순간 복도 끝의 기믹을 마주하게 하며, 깜빡이는 불빛과 속삭이는 사운드로 긴장감을 끌어올립니다.' },
-          { time: '03:25 - 04:10', desc: '창고 진입 후 불 켜짐, 문 닫힘, 글리치 연출로 긴장감을 높입니다. 내부 창고와 비품실을 구분할 수 있도록 간판을 문 옆에 배치합니다. 첫 번째 열쇠는 쪽지와 함께 배치하여 해당 열쇠가 비품실 열쇠라는 것을 자연스럽게 인지시킵니다.' },
-          { time: '04:16 - 04:44', desc: '비품실에서 열쇠를 집으러 가는 중 뒤에서 손뼉 치는 소리를 내어 누군가 있다는 긴장감을 부여합니다. 열쇠 옆에는 마지막 비밀번호 위치 힌트가 담긴 의미심장한 문구의 쪽지도 배치합니다.' },
-          { time: '04:53 - 05:18', desc: '내부 창고를 열자마자 피로 쓰인 RUN 문구로 뛸 상황이 있음을 암시합니다. 긴 복도 끝에 도달할 즈음 천장의 마지막 비밀번호를 확인하는 순간 몬스터가 굉음과 함께 스폰되어 플레이어를 쫓아옵니다.' },
+          { time: '00:31 - 01:00', desc: '한쪽 길을 오브젝트로 막고 조명을 어둡게 하여 플레이어가 올바른 길로 가도록 자연스럽게 유도합니다. 다른 병실 문 또한 상호작용이 가능하지만 잠긴 사운드를 내어 자연스럽게 올바른 플레이 구간으로 이동하도록 합니다.', img: 'images/thedoor-timeline-1.png' },
+          { time: '01:05 - 01:40', desc: '가는 길에 피로 그려진 표식을 배치하여 해당 문을 상호작용하도록 유도합니다. 그 병실에는 하이라이트 조명으로 강조된 곰인형을 배치하여 상호작용을 유도합니다. 플레이어가 방 안으로 들어왔다면 문이 세게 닫히는 소리와 함께 문을 닫아 긴장감을 높입니다.', img: ['images/thedoor-timeline-2.png', 'images/thedoor-timeline-2b.png'] },
+          { time: '02:00 - 02:40', desc: '안내데스크에 쪽지를 두어 다음 가야 할 장소와 탈출의 힌트를 자연스럽게 노출하여 플레이어가 해야 할 과제를 제시합니다. 손전등도 함께 배치하여 필요한 아이템의 개연성을 부여합니다. 벽에는 비밀번호에 대한 힌트가 하나 존재하여 4개의 비밀번호가 필요하다는 것을 암시합니다.', img: ['images/thedoor-timeline-3a.png', 'images/thedoor-timeline-3b.png'] },
+          { time: '02:55 - 03:15', desc: '역 ㄱ자 복도를 배치하여 플레이어가 복도의 끝을 보지 못하게 차단합니다. 코너를 도는 순간 복도 끝의 기믹을 마주하게 하며, 깜빡이는 불빛과 속삭이는 사운드로 긴장감을 끌어올립니다.', img: 'images/thedoor-timeline-4.png' },
+          { time: '03:25 - 04:10', desc: '창고 진입 후 불 켜짐, 문 닫힘, 글리치 연출로 긴장감을 높입니다. 내부 창고와 비품실을 구분할 수 있도록 간판을 문 옆에 배치합니다. 첫 번째 열쇠는 쪽지와 함께 배치하여 해당 열쇠가 비품실 열쇠라는 것을 자연스럽게 인지시킵니다.', img: ['images/thedoor-timeline-5a.png', 'images/thedoor-timeline-5b.png'] },
+          { time: '04:16 - 04:44', desc: '비품실에서 열쇠를 집으러 가는 중 뒤에서 손뼉 치는 소리를 내어 누군가 있다는 긴장감을 부여합니다. 열쇠 옆에는 마지막 비밀번호 위치 힌트가 담긴 의미심장한 문구의 쪽지도 배치합니다.', img: ['images/thedoor-timeline-6a.png', 'images/thedoor-timeline-6b.png'] },
+          { time: '04:53 - 05:18', desc: '내부 창고를 열자마자 피로 쓰인 RUN 문구로 뛸 상황이 있음을 암시합니다. 긴 복도 끝에 도달할 즈음 천장의 마지막 비밀번호를 확인하는 순간 몬스터가 굉음과 함께 스폰되어 플레이어를 쫓아옵니다.', img: ['images/thedoor-timeline-7a.png', 'images/thedoor-timeline-7b.png'] },
+          { time: '06:00 - 06:14', desc: '비밀번호를 모두 알아낸 다음 비밀번호를 입력하여 탈출합니다.', img: ['images/thedoor-timeline-8a.png', 'images/thedoor-timeline-8b.png'] },
         ],
       },
       {
@@ -390,10 +391,13 @@
               ${p.timeline.map((t,i) => `
                 <div style="display:grid;grid-template-columns:140px 1fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--border);${i===0?'border-top:1px solid var(--border);':''}">
                   <div>
-                    <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:2px;color:var(--red);margin-bottom:6px;">TIMESTAMP</div>
-                    <div style="font-family:var(--font-mono);font-size:12px;color:var(--cream);font-weight:700;">${t.time}</div>
+                    <div style="font-family:var(--font-mono);font-size:12px;letter-spacing:2px;color:var(--red);margin-bottom:6px;">TIMESTAMP</div>
+                    <div style="font-family:var(--font-mono);font-size:14px;color:var(--cream);font-weight:700;">${t.time}</div>
                   </div>
-                  <div style="font-size:14px;color:var(--cream);line-height:1.8;">${t.desc}</div>
+                  <div>
+                    ${t.img ? (Array.isArray(t.img) ? `<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">${t.img.map(src=>`<img src="${src}" alt="Timeline screenshot" style="width:100%;border-radius:8px;border:1px solid var(--border);display:block;">`).join('')}</div>` : `<img src="${t.img}" alt="Timeline screenshot" style="margin-bottom:16px;width:100%;max-width:720px;border-radius:8px;border:1px solid var(--border);display:block;">`) : ''}
+                    <div style="font-size:16px;color:var(--cream);line-height:1.8;">${t.desc}</div>
+                  </div>
                 </div>
               `).join('')}
             </div>
@@ -404,8 +408,8 @@
           <div style="display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--border);">
             ${p.info.map(i=>`
               <div style="padding:16px 32px 16px 0;margin-right:32px;border-right:1px solid var(--border);">
-                <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:2px;color:var(--red);text-transform:uppercase;margin-bottom:6px;">${i.label}</div>
-                <div style="font-size:13px;color:var(--cream);">${i.value}</div>
+                <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:2px;color:var(--red);text-transform:uppercase;margin-bottom:6px;">${i.label}</div>
+                <div style="font-size:15px;color:var(--cream);">${i.value}</div>
               </div>
             `).join('')}
           </div>
