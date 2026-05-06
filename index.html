@@ -169,7 +169,7 @@
     <a href="#" class="nav-logo" onclick="showMain(); return false;">YH<span>.</span></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#projects" onclick="goSection('projects'); closeMenu(); return false;">Projects</a></li>
-      <li><a href="#personal" onclick="goSection('personal'); closeMenu(); return false;">Personal</a></li>
+      <li style="display:none;"><a href="#personal" onclick="goSection('personal'); closeMenu(); return false;">Personal</a></li>
       <li><a href="#about" onclick="goSection('about'); closeMenu(); return false;">About</a></li>
       <li><a href="#contact" onclick="goSection('contact'); closeMenu(); return false;">Contact</a></li>
     </ul>
@@ -203,7 +203,7 @@
       </div>
     </section>
 
-    <section id="personal">
+    <section id="personal" style="display:none;">
       <div class="section-inner">
         <p class="section-label reveal">Side Studies</p>
         <h2 class="section-title reveal">Personal Work</h2>
@@ -290,7 +290,7 @@
         abbr: 'DW',
         meta: '2025.09 - 2025.10 · 1인 개발 · 출시작',
         title: 'DRONE WAR',
-        shortDesc: 'Vampire Survivors 스타일의 로그라이크 슈터. GRAC 심의 통과 후 토스 앱스토어에 출시한 실제 서비스 게임입니다.',
+        shortDesc: 'Vampire Survivors 스타일의 로그라이크 슈터. GRAC 심의 통과 후 토스 앱스토어에 출시한 실제 서비스 게임 (누적 유저 1,635명).',
         tags: ['Roguelike', 'System Design', 'Published', 'GRAC 인증'],
         fullDesc: `
           <p>Vampire Survivors류 로그라이크 슈터를 1인 개발하며 <strong>시스템 디자인</strong>을 집중적으로 경험한 프로젝트입니다.</p>
@@ -304,6 +304,7 @@
           { label: '기술', value: 'Web (바이브코딩)' },
           { label: '작업 영역', value: '전체 (기획, 프로그래밍, 아트)' },
           { label: '인증', value: 'GRAC 심의 통과 · 토스 앱스토어 정식 출시' },
+          { label: '누적 유저', value: '1,635명' },
         ],
         links: [],
         sections: [

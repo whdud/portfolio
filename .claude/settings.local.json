@@ -1,7 +1,35 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "Bash(ls \"/c/Users/whdud/Downloads/\"*ezgif* \"/c/Users/whdud/Downloads/image\"*)",
+      "Bash(ls:*)",
+      "Bash(python3 -c \"from docx import Document; print\\('ok'\\)\")",
+      "Bash(pip install:*)",
+      "Bash(python3:*)",
+      "Bash(mv dronewar-temp/dronewar-01.png dronewar-menu.png)",
+      "Bash(mv dronewar-temp/dronewar-02.png dronewar-drone-select.png)",
+      "Bash(mv dronewar-temp/dronewar-03.png dronewar-gameplay-early.png)",
+      "Bash(mv dronewar-temp/dronewar-04.png dronewar-melee.png)",
+      "Bash(mv dronewar-temp/dronewar-05.png dronewar-emp.png)",
+      "Bash(mv dronewar-7.png dronewar-drones1.png)",
+      "Bash(mv dronewar-3.png dronewar-drones2.png)",
+      "Bash(mv dronewar-1.png dronewar-drones3.png)",
+      "Bash(mv dronewar-11.png dronewar-weapons.png)",
+      "Bash(mv dronewar-10.png dronewar-mainmenu.png)",
+      "Bash(node *)",
+      "Bash(cp \"/c/Users/whdud/Downloads/KakaoTalk_20260428_160432172.png\" \"/c/Users/whdud/OneDrive/문서/GitHub/portfolio/images/obsidian-overview.png\")",
+      "Bash(cp \"/c/Users/whdud/Downloads/KakaoTalk_20260428_160353988.png\" \"/c/Users/whdud/OneDrive/문서/GitHub/portfolio/images/obsidian-blockout-1.png\")",
+      "Bash(cp \"/c/Users/whdud/Downloads/KakaoTalk_20260428_160353988_01.png\" \"/c/Users/whdud/OneDrive/문서/GitHub/portfolio/images/obsidian-blockout-2.png\")",
+      "Bash(cp \"/c/Users/whdud/Downloads/KakaoTalk_20260428_160353988_02.png\" \"/c/Users/whdud/OneDrive/문서/GitHub/portfolio/images/obsidian-site-a.png\")",
+      "Bash(cp \"/c/Users/whdud/Downloads/KakaoTalk_20260428_160353988_03.png\" \"/c/Users/whdud/OneDrive/문서/GitHub/portfolio/images/obsidian-site-b.png\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "WebSearch",
+      "WebFetch(domain:newsroom.smilegate.com)",
+      "WebFetch(domain:m.ddaily.co.kr)",
+      "WebFetch(domain:www.ipnn.co.kr)"
     ]
   }
 }
