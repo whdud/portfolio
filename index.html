@@ -471,6 +471,102 @@
         ],
         links: [],
       },
+      {
+        id: 'lupin',
+        youtubeId: 'PaqSL-OhU0A',
+        thumb: 'images/lupin-pagoda-ingame.jpg',
+        abbr: 'LP',
+        meta: '2026 · 1인 개발 · UE5 · 서울 플레이업 AI 게임 챌린지',
+        title: 'LUPIN',
+        shortDesc: '국립중앙박물관을 무대로 한 3인칭 잠입 절도 게임. 유물 희귀도와 5칸 가방으로 "더 노릴 것인가, 지금 탈출할 것인가"의 위험-보상 루프를 설계했습니다.',
+        tags: ['Stealth', 'Game Design', 'Risk-Reward', 'UE5', 'VARCO AI'],
+        fullDesc: `
+          <p><strong>루팡(LUPIN)</strong>은 서울 국립중앙박물관을 무대로 경비원의 감시를 피해 유물을 훔치고 탈출하는 3인칭 잠입 절도 게임입니다. 제1회 서울 플레이업 AI 게임 챌린지 출품작으로, 기획·프로그래밍·레벨·아트를 모두 1인으로 개발했습니다.</p>
+          <p><strong>핵심 설계 원칙:</strong> 서울 IP인 국립중앙박물관의 특징 — 가치가 제각각인 유물, 거대한 스케일과 복잡한 동선, 보안 시스템 — 을 각각 게임의 핵심 시스템으로 변환했습니다. 플레이어는 끝까지 <strong>더 비싼 유물을 노릴지, 지금 가진 것으로 안전하게 탈출할지</strong>를 선택하게 됩니다.</p>
+          <p>전체 3D 에셋 77개 중 65개(약 84%)를 VARCO 3D로, BGM과 정산 효과음을 VARCO Sound로 제작해 1인 개발의 한계를 AI로 보완했습니다.</p>
+        `,
+        info: [
+          { label: '장르', value: '3인칭 잠입 절도' },
+          { label: '플랫폼', value: 'PC (Windows)' },
+          { label: '개발 규모', value: '1인 개발' },
+          { label: '엔진', value: 'Unreal Engine 5' },
+          { label: '작업 영역', value: '전체 (기획, 프로그래밍, 레벨, 아트)' },
+          { label: 'AI 활용', value: 'VARCO 3D 65종 · VARCO Sound (BGM·효과음)' },
+        ],
+        links: [],
+        sections: [
+          {
+            title: '설계 의도 — IP의 특징을 시스템으로',
+            blocks: [
+              { type: 'callout', text: '<strong>핵심 질문</strong><br>국립중앙박물관이라는 공간이 가진 특징 자체를, 어떻게 게임의 재미 요소로 바꿀 수 있을까?' },
+              { type: 'list', items: [
+                '<strong>가치가 제각각인 유물</strong> → 희귀도 3등급 + 최대 5칸 가방. 무엇을 담을지 끊임없이 고민하게 만드는 선택의 시스템',
+                '<strong>압도적인 스케일과 복잡한 동선</strong> → 어느 전시관부터 털지 자유롭게 선택. 넓은 복도와 전시 공간은 숨고 우회하는 잠입 공간으로 활용',
+                '<strong>박물관의 보안 시스템</strong> → 경비원 AI와 강화유리 케이스. 유물을 얻으려면 반드시 소음을 감수해야 하는 구조',
+              ]},
+            ]
+          },
+          {
+            title: '게임 루프',
+            blocks: [
+              { type: 'text', text: '<strong>로비 → 박물관 잠입 → 유물 탈취 → 탈출 및 정산</strong>의 한 판 구조입니다.' },
+              { type: 'subtitle', text: '로비 — 목표와 동기를 자연스럽게 전달' },
+              { type: 'img', src: 'images/lupin-newspaper.jpg' },
+              { type: 'text', text: '화이트보드로 기본 조작법을, 책상 위 신문의 \'국립중앙박물관, 세계 박물관 순위\' 기사로 범행 동기와 목표를 전달합니다. 별도의 컷신 없이 오브젝트와의 상호작용만으로 플레이어가 상황을 이해하도록 구성했습니다.' },
+              { type: 'subtitle', text: '경비원 — 여러 갈래의 해결 방법' },
+              { type: 'img', src: 'images/lupin-stealth.jpg' },
+              { type: 'list', items: [
+                '몰래 지나가기, 뒤에서 접근해 암살하기, 발각 시 근접전 또는 총격전 중 선택',
+                '가까운 거리에서 총을 겨누면 경비원이 항복하는 선택지',
+                '근접 전투형 · 권총 사격형 2종, 시야각 기반 탐지',
+                '전시관 유물의 희귀도에 따라 경비원 수와 무장 상태가 달라져, 상황마다 다른 전략을 요구',
+              ]},
+              { type: 'subtitle', text: '유물 탈취 — 보상에는 반드시 위험이 따른다' },
+              { type: 'img', src: 'images/lupin-glass.jpg' },
+              { type: 'text', text: '유물은 강화유리 케이스 안에 있어 <strong>총으로만 파괴</strong>할 수 있습니다. 조용히 잠입하던 플레이어도 유물을 얻는 순간만큼은 발각 위험을 감수해야 하는 딜레마를 만들었습니다.' },
+            ]
+          },
+          {
+            title: '희귀도 시스템 — 위험-보상 설계',
+            blocks: [
+              { type: 'text', text: '유물은 빔 색상으로 등급을 직관적으로 구분합니다. 가치가 높을수록 경비가 많고 총기 소지 확률도 높아, <strong>보상과 위험이 함께 증가</strong>합니다. 가방은 최대 5칸이기 때문에 플레이어는 끝까지 "더 노릴 것인가, 지금 탈출할 것인가"를 선택하게 됩니다.' },
+              { type: 'list', items: [
+                '<strong>파랑 (일반)</strong> — 선사·삼국시대 토기·석기류. 저가, 경비 약함',
+                '<strong>초록 (고급)</strong> — 고려·조선시대 청자·금속공예품. 중가',
+                '<strong>금색 (희귀)</strong> — 왕실 유물·금동불상·금관 등. 고가, 경비 집중',
+              ]},
+              { type: 'img', src: 'images/lupin-rarity-blue.jpg' },
+              { type: 'img', src: 'images/lupin-rarity-green.jpg' },
+              { type: 'img', src: 'images/lupin-rarity-gold.jpg' },
+              { type: 'text', text: '탈출 구역에 들어가면 획득한 유물이 효과음과 함께 하나씩 등장하며 총 감정가가 정산됩니다. 유물 가격·희귀도는 DataTable로 관리하고, 정산은 GameInstance에 누적해 로비에서 확인합니다.' },
+            ]
+          },
+          {
+            title: '서울 IP 구현',
+            blocks: [
+              { type: 'text', text: '실제 국립중앙박물관의 개방감과 전시관 구조를 살리면서, 잠입 플레이에 맞게 동선을 재구성했습니다. 현재 외관과 1층이 구현되어 있으며, 1층에는 실제 소장품을 모티프로 한 유물 58종이 배치되어 있습니다.' },
+              { type: 'img', src: 'images/lupin-pagoda-ingame.jpg' },
+              { type: 'img', src: 'images/lupin-pagoda-real.jpg' },
+              { type: 'text', text: '위: 인게임 경천사지 십층석탑 / 아래: 실제 국립중앙박물관' },
+              { type: 'subtitle', text: 'VARCO 3D로 제작한 유물 에셋' },
+              { type: 'img', src: 'images/lupin-varco-assets.jpg' },
+            ]
+          },
+          {
+            title: '플레이테스트 피드백과 개선 계획',
+            blocks: [
+              { type: 'text', text: '유저 테스트에서 받은 피드백을 원인별로 분석하고, 우선순위를 정해 2차 제작 계획을 세웠습니다.' },
+              { type: 'list', items: [
+                '<strong>맵 사이즈 최적화</strong> — "공간이 휑하고 이동이 길다" → 맵 크기와 케이스 배치 밀도 재조정',
+                '<strong>튜토리얼 보강</strong> — "조작법이 어렵다" → 화이트보드 안내를 단계별 인터랙티브 튜토리얼로 확장',
+                '<strong>플레이 목표 추가</strong> — 반복 플레이 동기 부족 → 기한 내 목표 금액을 달성하지 못하면 게임오버되는 시스템',
+                '<strong>2·3층 전시관 확장</strong> — 층별 유물 구성과 보안 레벨 차등',
+                '<strong>최적화</strong> — 모든 경비원이 동시에 생성되는 구조 → 플레이어 위치 기반 활성화',
+              ]},
+            ]
+          },
+        ],
+      },
           /* ✏️ 새 프로젝트: 위 형식 복붙 후 내용 수정 */
     ];
 
